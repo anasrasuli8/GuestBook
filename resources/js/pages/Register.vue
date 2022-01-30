@@ -46,8 +46,8 @@
                     </b-form-group>
 
                     <b-form-group label="Account Type" label-align="left">
-                        <b-form-radio v-model="form.user_role" value="author">Author</b-form-radio>
-                        <b-form-radio v-model="form.user_role" value="visitor">Visitor</b-form-radio>
+                        <b-form-radio v-model="form.is_author" value="1">Author</b-form-radio>
+                        <b-form-radio v-model="form.is_author" value="0">Visitor</b-form-radio>
                     </b-form-group>
 
                     <b-button type="submit" block variant="success">Save</b-button>
@@ -67,7 +67,7 @@ export default {
                 email: '',
                 name: '',
                 password: '',
-                user_role: 'author',
+                is_author: 1,
             },
         }
     },
