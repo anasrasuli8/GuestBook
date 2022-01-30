@@ -28,6 +28,7 @@
                         title: 'Success!',
                         variant: 'success',
                         solid: true
+                        })
                     }).catch(({response:{data}})=>{
                         this.$bvToast.toast(data.message+"\n"+JSON.stringify(data.errors), {
                             title: 'Operation Failed!',
@@ -35,7 +36,6 @@
                             solid: true
                         })
                     });
-                });
             },
         }
     }
